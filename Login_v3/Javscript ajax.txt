@@ -1,0 +1,87 @@
+<!-- <script>
+$(document).ready(function()
+{
+  $('.editbtn').on('click',function(){
+    
+    
+      $tr=$(this).closest('tr');
+
+      var data=$tr.children("td").map(function(){
+        return $(this).text();
+      }).get();
+      var name=data[3].toString();
+      $('select#depart').val(name); 
+      //console.log($("#deaprt 2:selected").index());
+      console.log(data);
+      $('#student_id').val(data[0]);
+      $('#student_name').val(data[1]);
+      $('#roll_no').val(data[2]);
+      $('#dep_id').val(data[3]); 
+      $('#phone').val(data[4]);
+      $('#username').val(data[5]);
+      $('#pass').val(data[6]);
+      $('#email').val(data[7]);
+  
+      //var x=$("select[name='dep-id'] option:selected").index()
+    
+  });
+});
+
+</script>  -->
+
+<!-- ########################################################## -->
+<!-- <script>
+  $(document).ready(function(){
+
+$('.editbtn').click(function(){
+  
+  var userid = $(this).data('id');
+
+  // AJAX request
+  $.ajax({
+   url: 'fetch.php',
+   type: 'post',
+   data: {userid: userid},
+   success: function(response){ 
+     // Add response in Modal body
+     $('.modal-body').html(response);
+
+     // Display Modal
+     $('#Edit').modal('show'); 
+   }
+ });
+});
+});
+</script> -->
+<script>
+$(document).ready(function(){  
+      
+      
+  $('.editbtn').on('click',function(){  
+           var userid = $(this).attr("id");  
+                  console.log(userid);
+                
+           $.ajax({  
+                url:"fetch.php",  
+                method:"POST",  
+                data:{userid:userid},  
+                dataType:"json",  
+                success:function(data){
+           
+                 
+                    $('#student_id').val(data.student_id);  
+                    $('#student_name').val(data.student_name);  
+                    $('#roll_no').val(data.roll_no);  
+                    $('#dep_id').val(data.dep_id);  
+                    $('#phone').val(data.phone);  
+                    $('#username').val(data.username);  
+                    $('#pass').val(data.pass);  
+                    $('#email').val(data.email);  
+                    $('#Edit').modal('show');  
+                }
+                   
+           });  
+      });  
+
+});
+</script>
