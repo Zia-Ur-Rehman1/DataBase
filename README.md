@@ -26,7 +26,7 @@ Database Schema:
 
 Entity Relationship Diagram: 
 
-![](images\db.png)
+![](https://github.com/Zia-Ur-Rehman1/Mini-LMS/blob/main/images/db.png)
 
 Login Page: 
 
