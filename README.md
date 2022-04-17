@@ -22,7 +22,7 @@ Table of Contents
 
 Database Schema: 
 
-![](images\dbschema.png)
+![](https://github.com/Zia-Ur-Rehman1/Mini-LMS/blob/main/images/dbschema.png)
 
 Entity Relationship Diagram: 
 
@@ -34,9 +34,9 @@ Login page is getting data from Table (admin). Given Input is compared with user
 
 Front End 
 
-![](images\login.png)But If the Password Is Wrong It Display the **Error** There is no navigation on this page 
+![](https://github.com/Zia-Ur-Rehman1/Mini-LMS/blob/main/images/login.png)But If the Password Is Wrong It Display the **Error** There is no navigation on this page 
 
-![](images\auth.jpeg)
+![](https://github.com/Zia-Ur-Rehman1/Mini-LMS/blob/main/images/auth.jpeg)
 
 You cannot access directly to any page by using URL, you must have to Login First in order to gain access to any page. 
 
@@ -44,31 +44,31 @@ Navigation Bar:
 
 Front End 
 
-![](images\nav.png)
+![](https://github.com/Zia-Ur-Rehman1/Mini-LMS/blob/main/images/nav.png)
 
 Explanation:This is the navigation bar. It is fully responsive and active. All the page links are provided at the top.  
 
 On the Right Corner the username of the admin is passed in Session variable. As it is full responsive its changes its shape according to the size of page. As soon we move the page to small size navigation bar collapse. 
 
-![](images\navcollapse.png)
+![](https://github.com/Zia-Ur-Rehman1/Mini-LMS/blob/main/images/navcollapse.png)
 
 As we click on the right toggle menu. Its shows the page links. 
 
 It is present on the top of every page and from here you can navigate to any page 
 
-![](images\navopen.png)
+![](https://github.com/Zia-Ur-Rehman1/Mini-LMS/blob/main/images/navopen.png)
 
 Log out method: 
 
 By clicking on the name of admin, which is shown on the right top corner of page in navigation bar. A pop up modal appears in order to log out. You must have to log out in order to login again due to redirect URL check. By clicking on the name following action occurs. 
 
-![](images\logout.png)
+![](https://github.com/Zia-Ur-Rehman1/Mini-LMS/blob/main/images/logout.png)
 
 Students Page: 
 
 Front End
 
-![](images\dash.jpeg)Explanation:This is the student page also used as home page. The whole data is fetched from Table (students) is shown on this page by using command: 
+![](https://github.com/Zia-Ur-Rehman1/Mini-LMS/blob/main/images/dash.jpeg)Explanation:This is the student page also used as home page. The whole data is fetched from Table (students) is shown on this page by using command: 
 
 Select \* from students Primary Key (student\_id) 
 
@@ -84,7 +84,7 @@ Teachers Page:
 
 Front End
 
-![](images\teacher.jpeg)
+![](https://github.com/Zia-Ur-Rehman1/Mini-LMS/blob/main/images/teacher.jpeg)
 
 Explanation:This is teachers page. All the data is fetched from Table (teacher). All data is fetched using command: 
 
@@ -100,7 +100,7 @@ Courses Page:
 
 Front End 
 
-![](images\courses.jpeg)
+![](https://github.com/Zia-Ur-Rehman1/Mini-LMS/blob/main/images/courses.jpeg)
 
 Explanation: This is courses page. All the data is fetched from Table (courses). All data is fetched using command: 
 
@@ -112,7 +112,7 @@ Departments Page:
 
 Front End
 
-![](images\dept.jpeg)
+![](https://github.com/Zia-Ur-Rehman1/Mini-LMS/blob/main/images/dept.jpeg)
 
 Explanation: This is courses page. All the data is fetched from Table (departments). All data is fetched using command: 
 
@@ -124,7 +124,7 @@ Enrollments Page:
 
 Front End
 
-![](images\front.png)![](images\enroll.jpeg)
+![](https://github.com/Zia-Ur-Rehman1/Mini-LMS/blob/main/images/front.png)![](https://github.com/Zia-Ur-Rehman1/Mini-LMS/blob/main/images/enroll.jpeg)
 
 Explanation: This is enrollments page. All the data is fetched from Table (enrollments). All data is fetched using command: 
 
@@ -140,11 +140,11 @@ There are three main functionalities on each page. You Can Add, Update or Delete
 
 ADD: 
 
-![](images\studentBtn.png)
+![](https://github.com/Zia-Ur-Rehman1/Mini-LMS/blob/main/images/studentBtn.png)
 
 This is button to add new information in any table. In student table it adds new students in teacher it adds new teacher and same in all other table as soon as button is clicked following action takes place. 
 
-![](images\addstudent.jpeg)
+![](https://github.com/Zia-Ur-Rehman1/Mini-LMS/blob/main/images/addstudent.jpeg)
 
 Placeholders are used in order to get the idea what is used to place in the following row. Instead of department id, a drop down menu having the names of departments is assigned here. On backend ID is passed and store in table instead of names. 
 
@@ -152,21 +152,21 @@ Note: In each table where foreign key is used drop down menu is assigned to add 
 
 Edit: 
 
-![](images\editBtn.png)
+![](https://github.com/Zia-Ur-Rehman1/Mini-LMS/blob/main/images/editBtn.png)
 
 This button is used to update the information of any table. As soon as the button click information of that row is fetched and appears in pop up modal 
 
-![](images\editStudent.jpeg)
+![](https://github.com/Zia-Ur-Rehman1/Mini-LMS/blob/main/images/editStudent.jpeg)
 
 Delete: 
 
-![](images\delBtn.png)
+![](https://github.com/Zia-Ur-Rehman1/Mini-LMS/blob/main/images/delBtn.png)
 
 This is delete button. It is used to delete the information of given row. 
 
 By clicking on this button, a pop up modal appears to confirm the delete action. This pop up modal is to verify the safety of data before removing it from the database completely. Following is the pop up modal: 
 
-![](images\delCaution.png)
+![](https://github.com/Zia-Ur-Rehman1/Mini-LMS/blob/main/images/delCaution.png)
 
 It has two simple action confirm the delete or cancel it. If you cancel it no action will occur and if you confirm it the data will be deleted from data base permanently. 
 
@@ -180,9 +180,9 @@ There are different types of error on each page according to the conditions.
 - In Departments two departments cannot have same name 
 - In Enrollments, one Student cannot enroll same course from two teachers and cannot repeat the enrollment. 
 
-![](images\error1.png)
+![](https://github.com/Zia-Ur-Rehman1/Mini-LMS/blob/main/images/error1.png)
 
-![](images\error2.jpeg)
+![](https://github.com/Zia-Ur-Rehman1/Mini-LMS/blob/main/images/error2.jpeg)
 
 All the error messages are designed using sweealert2. This is library of JavaScript, which use its pop up boxes. 
 
